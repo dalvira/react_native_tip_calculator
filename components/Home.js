@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import StarRating from './StarRating';
+
 class Home extends React.Component {
   render() {
     return (
@@ -9,7 +11,9 @@ class Home extends React.Component {
           <Text>Star Tipper</Text>
         </View>
         <View style={styles.body}>
-          <Text>Body</Text>
+          <View style={styles.starRatingContainer}>
+            <StarRating />
+          </View>
         </View>
       </View>
     );
@@ -34,11 +38,11 @@ const styles = StyleSheet.create({
   //Body Component Styles
   body: {
     flex: 6,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: 'blue'
   },
-  footer: {}
+  starRatingContainer: {
+    flex: 0.25
+  }
 });
 
 export default Home;
