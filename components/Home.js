@@ -1,9 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 import StarRating from './StarRating';
+import BillTotal from './BillTotal';
+import TippersSelection from './TippersSelection';
+import Calculation from './Calculation';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      billTotal: 0.0
+    };
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -13,6 +23,15 @@ class Home extends React.Component {
         <View style={styles.body}>
           <View style={styles.starRatingContainer}>
             <StarRating />
+          </View>
+          <View style={styles.billTotalContainer}>
+            <BillTotal />
+          </View>
+          <View style={styles.numOfTippersContainer}>
+            <TippersSelection />
+          </View>
+          <View style={styles.calculationContainer}>
+            <Calculation />
           </View>
         </View>
       </View>
@@ -41,6 +60,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue'
   },
   starRatingContainer: {
+    flex: 0.25
+  },
+  billTotalContainer: {
+    flex: 0.25
+  },
+  numOfTippersContainer: {
+    flex: 0.25
+  },
+  calculationContainer: {
     flex: 0.25
   }
 });

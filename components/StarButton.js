@@ -19,6 +19,21 @@ class StarButton extends React.Component {
     }
   }
 
+  renderStars(numberOfStars) {
+    for (let i = 0; i <= numberOfStars; i++) {
+      return (
+        <Icon.Button
+          style={styles.iconButtonContainer}
+          name={this.state.starType}
+          size={50}
+          backgroundColor="rgba(0, 0, 0, 0)"
+          underlayColor="rgba(0, 0, 0, 0)"
+          onPress={() => this.toggleStar(this.state.starType)}
+        />
+      );
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
