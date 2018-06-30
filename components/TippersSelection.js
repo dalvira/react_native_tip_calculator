@@ -1,11 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
+import Icon from 'react-native-vector-icons/EvilIcons';
 class TippersSelection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      arrowType: '',
+      numOfTippers: 1
+    };
   }
+
+  toggleTippers = arrowType => {
+    let num = this.state.numOfTippers;
+    console.log(num);
+    console.log(arrowType);
+    if (arrowType === 'arrow-left') {
+      this.setState({ numOfTippers: num - 1 });
+      console.log('add ', this.state.numOfTippers);
+    }
+    if (arrowType === 'arrow-right') {
+      this.setState({ numOfTippers: num + 1 });
+      console.log('add ', this.state.numOfTippers);
+    }
+  };
 
   render() {
     return (
@@ -14,7 +32,27 @@ class TippersSelection extends React.Component {
           <Text style={styles.numOfTippersLabel}>Number of Tippers</Text>
         </View>
         <View style={styles.numOfTippersSelectContainer}>
-          <Text>Select Tippers</Text>
+          <View style={styles.numOfTippersLessContainer}>
+            <Icon.Button
+              name="arrow-left"
+              size={40}
+              backgroundColor="red"
+              underlayColor="blue"
+              onPress={() => this.toggleTippers(this.props.name)}
+            />
+          </View>
+          <View style={styles.numOfTippersContainer}>
+            <Text>{this.state.numOfTippers}</Text>
+          </View>
+          <View style={styles.numOfTippersMoreContainer}>
+            <Icon.Button
+              name="arrow-right"
+              size={40}
+              backgroundColor="red"
+              underlayColor="blue"
+              onPress={() => this.toggleTippers(this.props.name)}
+            />
+          </View>
         </View>
       </View>
     );
@@ -30,8 +68,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'skyblue'
   },
   numOfTippersLabel: {},
-  numOfTippersSelectContainer: {},
-  numOfTippersSelect: {}
+  numOfTippersSelectContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  numOfTippersSelect: {},
+  numOfTippersContainer: {}
 });
 
 export default TippersSelection;
