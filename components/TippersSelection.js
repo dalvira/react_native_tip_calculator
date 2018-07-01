@@ -13,9 +13,7 @@ class TippersSelection extends React.Component {
 
   toggleTippers = arrowType => {
     let num = this.state.numOfTippers;
-    console.log(num);
-    console.log(arrowType);
-    if (arrowType === 'arrow-left') {
+    if (arrowType === 'arrow-left' && num > 1) {
       this.setState({ numOfTippers: num - 1 });
       console.log('add ', this.state.numOfTippers);
     }
@@ -38,7 +36,7 @@ class TippersSelection extends React.Component {
               size={40}
               backgroundColor="red"
               underlayColor="blue"
-              onPress={() => this.toggleTippers(this.props.name)}
+              onPress={() => this.toggleTippers('arrow-left')}
             />
           </View>
           <View style={styles.numOfTippersContainer}>
@@ -50,7 +48,7 @@ class TippersSelection extends React.Component {
               size={40}
               backgroundColor="red"
               underlayColor="blue"
-              onPress={() => this.toggleTippers(this.props.name)}
+              onPress={() => this.toggleTippers('arrow-right')}
             />
           </View>
         </View>
