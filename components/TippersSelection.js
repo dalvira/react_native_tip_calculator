@@ -15,11 +15,9 @@ class TippersSelection extends React.Component {
     let num = this.state.numOfTippers;
     if (arrowType === 'arrow-left' && num > 1) {
       this.setState({ numOfTippers: num - 1 });
-      console.log('add ', this.state.numOfTippers);
     }
     if (arrowType === 'arrow-right') {
       this.setState({ numOfTippers: num + 1 });
-      console.log('add ', this.state.numOfTippers);
     }
   };
 
