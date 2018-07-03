@@ -6,8 +6,6 @@ class StarRating extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      starType: 'star-border',
-      starId: 0,
       starObjArr: [
         {
           id: 0,
