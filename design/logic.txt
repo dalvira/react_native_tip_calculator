@@ -1,8 +1,0 @@
-Star Logic:
-
-if last star is clicked
-    change everything of <= index
-else
-    change everything of <= index
-    if stars of > index are checked
-        uncheck stars of > index
