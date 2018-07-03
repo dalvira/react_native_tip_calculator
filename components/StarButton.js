@@ -36,11 +36,17 @@ class StarButton extends React.Component {
   toggleStars(starId, starType) {
     let starArr = this.state.starObjArr;
     let selectedStar = starArr[starId];
+    let lastStar = starArr[starArr.length - 1];
     for (let i = 0; i <= selectedStar.id; i++) {
       if (starArr[i].starType === 'star-border') {
         starArr[i].starType = 'star';
-      } else {
-        starArr[i].starType = 'star-border';
+      }
+    }
+    if (selectedStar != lastStar) {
+      for (let i = starArr.indexOf(selectedStar) + 1; i < starArr.length; i++) {
+        if (starArr[i].starType === 'star') {
+          starArr[i].starType = 'star-border';
+        }
       }
     }
     this.setState({ starIdArr: starArr });
