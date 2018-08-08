@@ -1,22 +1,58 @@
-//Redux store for entire application
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
-const initialState = {};
+const preloadedState = {
+  starRatingReducer: {
+    starObjArr: [
+      {
+        id: 0,
+        starType: 'star-border',
+        percentage: 12
+      },
+      {
+        id: 1,
+        starType: 'star-border',
+        percentage: 15
+      },
+      {
+        id: 2,
+        starType: 'star-border',
+        percentage: 20
+      },
+      {
+        id: 3,
+        starType: 'star-border',
+        percentage: 22
+      },
+      {
+        id: 4,
+        starType: 'star-border',
+        percentage: 25
+      }
+    ],
+    percentage: 0
+  },
+  billTotalReducer: {
+    billTotal: 0.0
+  },
+  tippersSelectionReducer: {
+    arrowType: '',
+    numOfTippers: 1
+  },
+  calculationReducer: {
+    calculation: 0.0
+  }
+};
 
-//Array of middle to be used
 const middleware = [thunk];
 
-//Create store takes in Root Reducer, Initial State, and any Enhancers
 const store = createStore(
   rootReducer,
-  initialState
-  //Use enhancers
-  //   compose(
-  //     applyMiddleware(...middleware),
-  //     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  //   )
+  preloadedState,
+  compose()
+  // applyMiddleware(...middleware),
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 export default store;

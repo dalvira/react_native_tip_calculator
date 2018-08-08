@@ -4,14 +4,15 @@ import { Provider } from 'react-redux';
 
 import Home from './components/Home';
 
-//import store from './store';
-
+import store from './store';
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Home />
-      </View>
+      <Provider store={store}>
+        <View style={styles.container}>
+          <Home />
+        </View>
+      </Provider>
     );
   }
 }

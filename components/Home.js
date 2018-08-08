@@ -1,17 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-import StarRating from './StarRating';
-import BillTotal from './BillTotal';
-import TippersSelection from './TippersSelection';
-import Calculation from './Calculation';
+import StarRatingContainer from '../containers/StarRatingContainer';
+import BillTotalContainer from '../containers/BillTotalContainer';
+import TippersSelectionContainer from '../containers/TippersSelectionContainer';
+import CalculationContainer from '../containers/CalculationContainer';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      billTotal: 0.0
-    };
   }
 
   render() {
@@ -22,16 +19,16 @@ class Home extends React.Component {
         </View>
         <View style={styles.body}>
           <View style={styles.starRatingContainer}>
-            <StarRating />
+            <StarRatingContainer />
           </View>
           <View style={styles.billTotalContainer}>
-            <BillTotal />
+            <BillTotalContainer />
           </View>
           <View style={styles.numOfTippersContainer}>
-            <TippersSelection />
+            <TippersSelectionContainer />
           </View>
           <View style={styles.calculationContainer}>
-            <Calculation />
+            <CalculationContainer />
           </View>
         </View>
       </View>
@@ -46,7 +43,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'stretch'
   },
-  //Header Component Styles
   header: {
     flex: 1,
     justifyContent: 'center',
@@ -54,7 +50,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'red'
   },
   title: {},
-  //Body Component Styles
   body: {
     flex: 6,
     backgroundColor: 'blue'
