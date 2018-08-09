@@ -11,13 +11,13 @@ const TippersSelection = ({
   return (
     <View style={styles.container}>
       <View style={styles.numOfTippersLabelContainer}>
-        <Text style={styles.numOfTippersLabel}>Number of Tippers</Text>
+        <Text style={styles.numOfTippersLabel}>Tippers</Text>
       </View>
       <View style={styles.numOfTippersSelectContainer}>
         <View style={styles.numOfTippersLessContainer}>
           <Icon.Button
             name="arrow-left"
-            size={75}
+            size={70}
             backgroundColor="#65CB92"
             underlayColor="white"
             onPress={decrementTippers}
@@ -29,7 +29,7 @@ const TippersSelection = ({
         <View style={styles.numOfTippersMoreContainer}>
           <Icon.Button
             name="arrow-right"
-            size={75}
+            size={70}
             backgroundColor="#65CB92"
             underlayColor="white"
             onPress={incrementTippers}
@@ -66,11 +66,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   numOfTippersLessContainer: {
-    marginRight: 5
+    marginRight: 3
   },
   numOfTippersMoreContainer: {
-    marginLeft: 5,
-    paddingLeft: 5
+    marginLeft: 3,
+    paddingLeft: 3
   },
   numOfTippersContainer: {
     marginLeft: 10,

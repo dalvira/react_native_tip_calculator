@@ -15,14 +15,19 @@ const Calculation = ({
   return (
     <View style={styles.container}>
       <View style={styles.tipContainer}>
-        <Text style={styles.tip}>${calculation} per</Text>
+        <View style={styles.calculationContainer}>
+          <Text style={styles.tip}>${calculation}</Text>
+        </View>
+        <View style={styles.perTipperContainer}>
+          <Text style={styles.perTipper}> per</Text>
+        </View>
       </View>
       <View style={styles.calculateButtonContainer}>
         <TouchableOpacity
           style={styles.calculateButton}
           onPress={this.handleCalculation}
         >
-          <Text style={styles.calculateButtonLabel}>Calculate</Text>
+          <Text style={styles.calculateButtonLabel}>Calculate Tip</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -44,7 +49,8 @@ const styles = StyleSheet.create({
   },
   tipContainer: {
     flex: 1,
-    alignItems: 'center'
+    justifyContent: 'center',
+    flexDirection: 'row'
   },
   tip: {
     fontSize: 50,
@@ -52,7 +58,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Bodoni 72'
   },
   perTipper: {
-    fontSize: 30,
+    fontSize: 35,
     color: 'white',
     fontFamily: 'Bodoni 72'
   },
@@ -65,7 +71,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   calculateButtonLabel: {
-    fontSize: 40,
+    fontSize: 37,
     color: 'white',
     fontFamily: 'Bodoni 72'
   }
