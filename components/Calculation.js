@@ -15,8 +15,8 @@ const Calculation = ({
   return (
     <View style={styles.container}>
       <View style={styles.tipContainer}>
-        <Text style={styles.tip}>${calculation}</Text>
-        <Text style={styles.perTipper}>per Tipper</Text>
+        <Text style={styles.tip}>${calculation} per</Text>
+        {/* <Text style={styles.perTipper}>per Tipper</Text> */}
       </View>
       <View style={styles.calculateButtonContainer}>
         <Button
@@ -48,17 +48,19 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   tip: {
-    fontSize: 45,
+    fontSize: 50,
     color: 'white'
   },
   perTipper: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 30,
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   },
   calculateButtonContainer: {
     flex: 1,
     backgroundColor: '#5AB181'
-  }
+  },
+  calculateButton: {}
 });
 
 export default Calculation;

@@ -17,7 +17,7 @@ const TippersSelection = ({
         <View style={styles.numOfTippersLessContainer}>
           <Icon.Button
             name="arrow-left"
-            size={40}
+            size={75}
             backgroundColor="#65CB92"
             underlayColor="white"
             onPress={decrementTippers}
@@ -29,7 +29,7 @@ const TippersSelection = ({
         <View style={styles.numOfTippersMoreContainer}>
           <Icon.Button
             name="arrow-right"
-            size={40}
+            size={75}
             backgroundColor="#65CB92"
             underlayColor="white"
             onPress={incrementTippers}
@@ -56,8 +56,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#65CB92'
   },
   numOfTippersLabel: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 30,
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   },
   numOfTippersSelectContainer: {
     flexDirection: 'row',
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
   numOfTippersSelect: {},
   numOfTippersContainer: {},
   numOfTippers: {
-    fontSize: 45,
+    fontSize: 50,
     color: 'white'
   }
 });

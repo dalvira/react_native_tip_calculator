@@ -34,25 +34,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#65CB92'
   },
   billTotalLabelContainer: {
-    marginTop: 30,
     alignItems: 'center',
     backgroundColor: '#65CB92'
   },
   billTotalLabel: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 30,
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   },
   billTotalInputContainer: {
-    backgroundColor: '#5AB181',
-    marginLeft: 60,
-    marginRight: 60
+    backgroundColor: '#5AB181'
   },
   billTotalInput: {
-    height: 60,
-    borderColor: 'gray',
+    height: 90,
+    borderColor: '#5AB181',
     borderWidth: 1,
-    fontSize: 45,
-    textAlign: 'center'
+    fontSize: 50,
+    textAlign: 'center',
+    color: 'white'
   }
 });
 

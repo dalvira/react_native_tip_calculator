@@ -7,7 +7,7 @@ const preloadedState = {
     starObjArr: [
       {
         id: 0,
-        starType: 'star-border',
+        starType: 'star',
         percentage: 12
       },
       {
@@ -31,7 +31,7 @@ const preloadedState = {
         percentage: 25
       }
     ],
-    percentage: 0
+    percentage: 12
   },
   billTotalReducer: {
     billTotal: 0.0

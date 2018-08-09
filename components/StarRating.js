@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#65CB92'
   },
   starButtonsContainer: {
-    flex: 2,
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center'
   },
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   percentage: {
-    fontSize: 45,
+    fontSize: 50,
     color: 'white'
   }
 });
