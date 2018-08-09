@@ -10,9 +10,6 @@ class CalculationContainer extends React.Component {
   }
 
   render() {
-    console.log(this.props.percentage);
-    console.log(this.props.billTotal);
-    console.log(this.props.numOfTippers);
     return (
       <View style={styles.container}>
         <Calculation
@@ -37,7 +34,7 @@ const mapStateToProps = state => ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'teal'
+    backgroundColor: 'white'
   }
 });
 

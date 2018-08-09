@@ -35,7 +35,7 @@ StarRating.propTypes = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'orange'
+    backgroundColor: '#65CB92'
   },
   starButtonsContainer: {
     flex: 2,
@@ -44,9 +44,13 @@ const styles = StyleSheet.create({
   },
   percentageContainer: {
     flex: 1,
-    backgroundColor: 'green'
+    backgroundColor: '#65CB92',
+    alignItems: 'center'
   },
-  percentage: {}
+  percentage: {
+    fontSize: 45,
+    color: 'white'
+  }
 });
 
 export default StarRating;

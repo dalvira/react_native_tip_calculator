@@ -18,20 +18,20 @@ const TippersSelection = ({
           <Icon.Button
             name="arrow-left"
             size={40}
-            backgroundColor="red"
-            underlayColor="blue"
+            backgroundColor="#65CB92"
+            underlayColor="white"
             onPress={decrementTippers}
           />
         </View>
         <View style={styles.numOfTippersContainer}>
-          <Text>{numOfTippers}</Text>
+          <Text style={styles.numOfTippers}>{numOfTippers}</Text>
         </View>
         <View style={styles.numOfTippersMoreContainer}>
           <Icon.Button
             name="arrow-right"
             size={40}
-            backgroundColor="red"
-            underlayColor="blue"
+            backgroundColor="#65CB92"
+            underlayColor="white"
             onPress={incrementTippers}
           />
         </View>
@@ -49,19 +49,27 @@ TippersSelection.propTypes = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'teal'
+    backgroundColor: '#65CB92'
   },
   numOfTippersLabelContainer: {
-    backgroundColor: 'skyblue'
+    alignItems: 'center',
+    backgroundColor: '#65CB92'
   },
-  numOfTippersLabel: {},
+  numOfTippersLabel: {
+    fontSize: 20,
+    color: 'white'
+  },
   numOfTippersSelectContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center'
   },
   numOfTippersSelect: {},
-  numOfTippersContainer: {}
+  numOfTippersContainer: {},
+  numOfTippers: {
+    fontSize: 45,
+    color: 'white'
+  }
 });
 
 export default TippersSelection;

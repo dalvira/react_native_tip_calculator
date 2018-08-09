@@ -15,7 +15,7 @@ class Home extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text>Star Tipper</Text>
+          <Text style={styles.title}>Star Tipper</Text>
         </View>
         <View style={styles.body}>
           <View style={styles.starRatingContainer}>
@@ -41,18 +41,23 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'stretch',
     justifyContent: 'center',
-    alignItems: 'stretch'
+    alignItems: 'stretch',
+    backgroundColor: '#65CB92'
   },
   header: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red'
+    backgroundColor: '#65CB92'
   },
-  title: {},
+  title: {
+    fontSize: 45,
+    color: 'white',
+    fontFamily: 'Bodoni 72'
+  },
   body: {
     flex: 6,
-    backgroundColor: 'blue'
+    backgroundColor: 'white'
   },
   starRatingContainer: {
     flex: 0.25
@@ -63,6 +68,7 @@ const styles = StyleSheet.create({
   numOfTippersContainer: {
     flex: 0.25
   },
+  footer: {},
   calculationContainer: {
     flex: 0.25
   }
