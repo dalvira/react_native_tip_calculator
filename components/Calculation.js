@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 
 const Calculation = ({
@@ -16,15 +16,14 @@ const Calculation = ({
     <View style={styles.container}>
       <View style={styles.tipContainer}>
         <Text style={styles.tip}>${calculation} per</Text>
-        {/* <Text style={styles.perTipper}>per Tipper</Text> */}
       </View>
       <View style={styles.calculateButtonContainer}>
-        <Button
+        <TouchableOpacity
           style={styles.calculateButton}
           onPress={this.handleCalculation}
-          title="Calculate"
-          color="white"
-        />
+        >
+          <Text style={styles.calculateButtonLabel}>Calculate</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -44,12 +43,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#65CB92'
   },
   tipContainer: {
-    flex: 2,
+    flex: 1,
     alignItems: 'center'
   },
   tip: {
     fontSize: 50,
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   },
   perTipper: {
     fontSize: 30,
@@ -58,9 +58,17 @@ const styles = StyleSheet.create({
   },
   calculateButtonContainer: {
     flex: 1,
-    backgroundColor: '#5AB181'
+    backgroundColor: '#5AB181',
+    justifyContent: 'center'
   },
-  calculateButton: {}
+  calculateButton: {
+    alignItems: 'center'
+  },
+  calculateButtonLabel: {
+    fontSize: 40,
+    color: 'white',
+    fontFamily: 'Bodoni 72'
+  }
 });
 
 export default Calculation;

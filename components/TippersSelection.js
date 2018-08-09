@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#65CB92'
   },
   numOfTippersLabel: {
-    fontSize: 30,
+    fontSize: 35,
     color: 'white',
     fontFamily: 'Bodoni 72'
   },
@@ -65,11 +65,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  numOfTippersSelect: {},
-  numOfTippersContainer: {},
+  numOfTippersLessContainer: {
+    marginRight: 5
+  },
+  numOfTippersMoreContainer: {
+    marginLeft: 5,
+    paddingLeft: 5
+  },
+  numOfTippersContainer: {
+    marginLeft: 10,
+    marginRight: 10
+  },
   numOfTippers: {
     fontSize: 50,
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   }
 });
 

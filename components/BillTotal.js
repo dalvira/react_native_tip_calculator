@@ -31,14 +31,15 @@ BillTotal.propTypes = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#65CB92'
+    backgroundColor: '#65CB92',
+    borderColor: '#65CB92'
   },
   billTotalLabelContainer: {
     alignItems: 'center',
     backgroundColor: '#65CB92'
   },
   billTotalLabel: {
-    fontSize: 30,
+    fontSize: 35,
     color: 'white',
     fontFamily: 'Bodoni 72'
   },
@@ -46,12 +47,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#5AB181'
   },
   billTotalInput: {
-    height: 90,
+    height: 85,
     borderColor: '#5AB181',
     borderWidth: 1,
     fontSize: 50,
     textAlign: 'center',
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   }
 });
 

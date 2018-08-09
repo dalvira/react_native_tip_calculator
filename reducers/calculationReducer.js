@@ -7,7 +7,8 @@ export default function(state = initialState, action) {
     case CALCULATE_TIP:
       let totalTip =
         action.payload.billTotal * (action.payload.percentage / 100);
-      let calculation = totalTip / action.payload.numOfTippers;
+      let calculation =
+        Math.round((totalTip / action.payload.numOfTippers) * 100) / 100;
       return {
         ...state,
         calculation: calculation

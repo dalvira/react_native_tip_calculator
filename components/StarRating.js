@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
   starButtonsContainer: {
     flex: 1,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginTop: 10
   },
   percentageContainer: {
     flex: 1,
@@ -49,7 +50,8 @@ const styles = StyleSheet.create({
   },
   percentage: {
     fontSize: 50,
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Bodoni 72'
   }
 });
 

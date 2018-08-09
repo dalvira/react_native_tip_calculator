@@ -22,7 +22,9 @@ class Home extends React.Component {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View style={styles.container}>
           <View style={styles.header}>
-            <Text style={styles.title}>Star Tipper</Text>
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>Star Tipper</Text>
+            </View>
           </View>
           <View style={styles.body}>
             <View style={styles.starRatingContainer}>
@@ -58,6 +60,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#5AB181'
   },
+  titleContainer: {
+    marginTop: 20
+  },
   title: {
     fontSize: 45,
     color: 'white',
@@ -68,17 +73,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   starRatingContainer: {
-    flex: 0.25
+    flex: 0.26,
+    borderBottomWidth: 0
   },
   billTotalContainer: {
-    flex: 0.25
+    flex: 0.25,
+    borderTopWidth: 0
   },
   numOfTippersContainer: {
-    flex: 0.25
+    flex: 0.23
   },
-  footer: {},
   calculationContainer: {
-    flex: 0.25
+    flex: 0.26
   }
 });
 
