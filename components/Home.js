@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Keyboard,
+  TouchableWithoutFeedback
+} from 'react-native';
 
 import StarRatingContainer from '../containers/StarRatingContainer';
 import BillTotalContainer from '../containers/BillTotalContainer';
@@ -13,25 +19,27 @@ class Home extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.title}>Star Tipper</Text>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+        <View style={styles.container}>
+          <View style={styles.header}>
+            <Text style={styles.title}>Star Tipper</Text>
+          </View>
+          <View style={styles.body}>
+            <View style={styles.starRatingContainer}>
+              <StarRatingContainer />
+            </View>
+            <View style={styles.billTotalContainer}>
+              <BillTotalContainer />
+            </View>
+            <View style={styles.numOfTippersContainer}>
+              <TippersSelectionContainer />
+            </View>
+            <View style={styles.calculationContainer}>
+              <CalculationContainer />
+            </View>
+          </View>
         </View>
-        <View style={styles.body}>
-          <View style={styles.starRatingContainer}>
-            <StarRatingContainer />
-          </View>
-          <View style={styles.billTotalContainer}>
-            <BillTotalContainer />
-          </View>
-          <View style={styles.numOfTippersContainer}>
-            <TippersSelectionContainer />
-          </View>
-          <View style={styles.calculationContainer}>
-            <CalculationContainer />
-          </View>
-        </View>
-      </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
