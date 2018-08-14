@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   calculateButtonLabel: {
     fontSize: 37,
     color: 'white',
-    fontFamily: 'Bodoni 72 Smallcaps'
+    fontFamily: 'Bodoni 72'
   }
 });
 
