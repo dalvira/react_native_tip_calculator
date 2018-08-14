@@ -61,7 +61,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#5AB181'
   },
   titleContainer: {
-    marginTop: 20
+    marginTop: 10,
+    alignItems: 'center'
   },
   title: {
     fontSize: 45,

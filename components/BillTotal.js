@@ -18,6 +18,8 @@ const BillTotal = ({ onBillChange }) => {
           placeholder={'$0.00'}
           keyboardType="numeric"
           onChangeText={this.handleBill}
+          underlineColorAndroid="transparent"
+          placeholderTextColor="#5C9375"
         />
       </View>
     </View>

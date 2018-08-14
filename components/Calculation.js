@@ -27,7 +27,7 @@ const Calculation = ({
           style={styles.calculateButton}
           onPress={this.handleCalculation}
         >
-          <Text style={styles.calculateButtonLabel}>Calculate Tip</Text>
+          <Text style={styles.calculateButtonLabel}>Calculate</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   calculateButtonLabel: {
     fontSize: 37,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'Bodoni 72 Smallcaps'
   }
 });
 

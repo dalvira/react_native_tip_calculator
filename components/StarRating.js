@@ -41,7 +41,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 10
+    marginTop: 10,
+    justifyContent: 'center',
+    paddingLeft: 10
   },
   percentageContainer: {
     flex: 1,
