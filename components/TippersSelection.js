@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   numOfTippersLabel: {
     fontSize: 35,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   },
   numOfTippersSelectContainer: {
     flexDirection: 'row',
@@ -66,11 +66,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   numOfTippersLessContainer: {
-    marginRight: 3
+    marginRight: 2
   },
   numOfTippersMoreContainer: {
     marginLeft: 3,
-    paddingLeft: 3
+    paddingLeft: 5
   },
   numOfTippersContainer: {
     marginLeft: 10,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   numOfTippers: {
     fontSize: 50,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   }
 });
 

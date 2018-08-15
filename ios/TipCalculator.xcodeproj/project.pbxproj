@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -50,6 +49,7 @@
 		E0C0537484754380BF877DF7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB4173876F014E17A381D599 /* EvilIcons.ttf */; };
 		E9C6CADCBE264D78B18D28CE /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF74348ACE49434AB8D713DF /* FontAwesome.ttf */; };
 		F27E38438DD4496FA40B9FEC /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A64CC3012E474B08AA319812 /* Foundation.ttf */; };
+		4B24B642AFE24F13B25C0D1B /* TempoFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDA76FA4D54AE09EB6A1F9 /* TempoFont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -375,6 +375,7 @@
 		BF74348ACE49434AB8D713DF /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		CEB7674FDBD642AE8A60F8EB /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		EB4173876F014E17A381D599 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		3FBDA76FA4D54AE09EB6A1F9 /* TempoFont.ttf */ = {isa = PBXFileReference; name = "TempoFont.ttf"; path = "../assets/fonts/TempoFont.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +671,7 @@
 				6E8C0650B26B4E639F95B2A6 /* Octicons.ttf */,
 				2D368FEF13D8445A89829A3A /* SimpleLineIcons.ttf */,
 				2ACC93B8BA924021A69A7A93 /* Zocial.ttf */,
+				3FBDA76FA4D54AE09EB6A1F9 /* TempoFont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1146,6 +1148,7 @@
 				02FF6BD5AA734896A7987870 /* Octicons.ttf in Resources */,
 				1CAE2613F20D401984EF2319 /* SimpleLineIcons.ttf in Resources */,
 				C91A90A06364473AA61B5DDA /* Zocial.ttf in Resources */,
+				4B24B642AFE24F13B25C0D1B /* TempoFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   billTotalLabel: {
     fontSize: 35,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   },
   billTotalInputContainer: {
     backgroundColor: '#5AB181'
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 50,
     textAlign: 'center',
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   }
 });
 

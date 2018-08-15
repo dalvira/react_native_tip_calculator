@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
   tip: {
     fontSize: 50,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   },
   perTipper: {
     fontSize: 35,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   },
   calculateButtonContainer: {
     flex: 1,
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   calculateButtonLabel: {
     fontSize: 37,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   }
 });
 

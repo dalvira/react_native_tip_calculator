@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 45,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   },
   body: {
     flex: 6,

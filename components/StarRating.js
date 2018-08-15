@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   percentage: {
     fontSize: 50,
     color: 'white',
-    fontFamily: 'Bodoni 72'
+    fontFamily: 'TempoFont'
   }
 });
 
