@@ -19,7 +19,7 @@ export default function(state = initialState, action) {
         Alert.alert(
           'Sheesh!',
           'Must be expensive. Try again.',
-          [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+          [{ text: 'OK' }],
           { cancelable: false }
         );
       }

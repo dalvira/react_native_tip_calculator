@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#65CB92'
+    backgroundColor: '#5AB181'
   },
   header: {
     flex: 1,
@@ -61,7 +61,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#5AB181'
   },
   titleContainer: {
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#5AB181'
   },
   title: {
     fontSize: 45,
