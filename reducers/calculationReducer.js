@@ -1,4 +1,5 @@
 import { CALCULATE_TIP } from '../actions/calculationActions';
+import { Alert } from 'react-native';
 
 const initialState = {};
 
@@ -15,7 +16,12 @@ export default function(state = initialState, action) {
           calculation: calculation
         };
       } else {
-        alert('Must enter valid number');
+        Alert.alert(
+          'Sheesh!',
+          'Must be expensive. Try again.',
+          [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+          { cancelable: false }
+        );
       }
     default:
       return state;
