@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#5AB181'
   },
   titleContainer: {
-    marginTop: 10,
     alignItems: 'center'
   },
   title: {
