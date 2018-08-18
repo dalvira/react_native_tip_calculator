@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
   },
   numOfTippersLabel: {
     fontSize: 35,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   },
   numOfTippersSelectContainer: {
     flexDirection: 'row',
@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
   },
   numOfTippers: {
     fontSize: 50,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   }
 });
 

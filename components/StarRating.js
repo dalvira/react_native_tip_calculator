@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
   },
   percentage: {
     fontSize: 50,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   }
 });
 

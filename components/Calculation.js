@@ -54,13 +54,13 @@ const styles = StyleSheet.create({
   },
   tip: {
     fontSize: 50,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   },
   perTipper: {
     fontSize: 35,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   },
   calculateButtonContainer: {
     flex: 1,
@@ -68,12 +68,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   calculateButton: {
-    alignItems: 'center'
+    alignItems: 'center',
+    alignSelf: 'stretch'
   },
   calculateButtonLabel: {
     fontSize: 37,
-    color: 'white',
-    fontFamily: 'TempoFont'
+    color: 'white'
+    // fontFamily: 'TempoFont'
   }
 });
 

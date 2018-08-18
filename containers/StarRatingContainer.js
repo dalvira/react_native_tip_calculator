@@ -10,7 +10,6 @@ class StarRatingContainer extends React.Component {
   }
 
   render() {
-    console.log(this.props.starObjArr);
     return (
       <View style={styles.container}>
         <StarRating
